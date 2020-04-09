@@ -1,10 +1,8 @@
+<html><head><title>It works!</title></head>
+<body>
+Your site is ready to go!<br />Host: <?php echo $_SERVER['HTTP_HOST']; ?>
 <?php
-$to      = 'tommy@sitehost.co.nz';
-$subject = 'Hi';
-$message = 'hello';
-$headers = 'From: tommy@tommyngo.co.nz' . "\r\n" .
-    'Reply-To: tommy@tommyngo.co.nz' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-
-print_r(mail($to, $subject, $message, $headers));
-?> 
+echo "HERE";
+print_r(mail("tommy@sitehost.co.nz","LAMBDA TEST","Hello"));
+?>
+</body></html>
