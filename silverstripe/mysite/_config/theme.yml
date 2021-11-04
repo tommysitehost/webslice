@@ -1,0 +1,15 @@
+---
+Name: mytheme
+---
+SilverStripe\View\SSViewer:
+  themes:
+    - '/mysite'
+    - 'simple'
+    - '$default'
+
+SilverStripe\LoginForms\EnablerExtension:
+  login_themes:
+    - '$public'
+    - 'silverstripe/login-forms:login-forms'
+    - 'simple'
+    - '$default'
